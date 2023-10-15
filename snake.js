@@ -1,8 +1,10 @@
+import * as PIXI from 'https://cdn.skypack.dev/pixi.js';
+
 const app = new PIXI.Application({ width: 800, height: 600, backgroundColor: 0x1099bb });
 document.body.appendChild(app.view);
 
 const cellSize = 20;
-const direction = { x: 1, y: 0 };
+let direction = { x: 1, y: 0 };
 const snake = [{ x: 10, y: 10 }];
 let food = { x: 15, y: 15 };
 
